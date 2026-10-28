@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>长页存档</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="brand">
+        <span class="brand__mark" aria-hidden="true">↧</span>
+        <div>
+          <h1>长页存档</h1>
+          <p>截图与 Markdown，一次存好</p>
+        </div>
+      </header>
+
+      <section class="page-card" aria-label="当前页面">
+        <span class="eyebrow">当前页面</span>
+        <p id="page-title" class="page-title">正在读取…</p>
+      </section>
+
+      <section class="actions" aria-label="导出格式">
+        <button class="action action--primary" data-format="png">
+          <span class="action__icon">PNG</span>
+          <span><strong>导出 PNG 长图</strong><small>完整页面，一张图片</small></span>
+        </button>
+        <button class="action" data-format="pdf">
+          <span class="action__icon">PDF</span>
+          <span><strong>导出分页 PDF</strong><small>与长图一致，自动分页</small></span>
+        </button>
+        <button class="action" data-format="markdown">
+          <span class="action__icon">MD</span>
+          <span><strong>导出快速 Markdown</strong><small>可编辑，图片保留网络地址</small></span>
+        </button>
+        <button class="action" data-format="markdown-zip">
+          <span class="action__icon">ZIP</span>
+          <span><strong>导出离线 Markdown 包</strong><small>正文和图片一起保存</small></span>
+        </button>
+      </section>
+
+      <section id="status-panel" class="status" aria-live="polite" hidden>
+        <div class="status__row">
+          <span id="status-text">正在准备…</span>
+          <span id="status-percent"></span>
+        </div>
+        <div class="progress"><span id="progress-bar"></span></div>
+        <button id="cancel-button" class="cancel" type="button">取消任务</button>
+      </section>
+
+      <p id="notice" class="notice">网页内容只在本机处理，不会上传。</p>
+    </main>
+    <script src="popup.js" defer></script>
+  </body>
+</html>

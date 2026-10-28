@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "长页存档",
+  "description": "将完整网页保存为 PNG 长图、分页 PDF 或可编辑 Markdown。",
+  "version": "0.1.0",
+  "minimum_chrome_version": "116",
+  "action": {
+    "default_title": "长页存档",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads",
+    "storage",
+    "offscreen"
+  ],
+  "optional_host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ]
+}

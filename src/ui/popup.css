@@ -1,0 +1,47 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  color: #17231d;
+  background: #f4f7f3;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 360px; }
+button { font: inherit; }
+
+.shell { padding: 18px; }
+.brand { display: flex; align-items: center; gap: 11px; margin-bottom: 14px; }
+.brand__mark {
+  display: grid; place-items: center; width: 38px; height: 38px; border-radius: 12px;
+  color: white; background: linear-gradient(145deg, #246b4b, #174a36); font-size: 22px;
+  box-shadow: 0 7px 18px rgb(29 95 67 / 22%);
+}
+.brand h1 { margin: 0; font-size: 18px; letter-spacing: .02em; }
+.brand p { margin: 2px 0 0; color: #67736d; font-size: 11px; }
+.page-card { padding: 11px 12px; border: 1px solid #dce4df; border-radius: 12px; background: #fff; }
+.eyebrow { color: #75817b; font-size: 10px; letter-spacing: .08em; }
+.page-title { margin: 4px 0 0; overflow: hidden; font-size: 12px; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }
+.actions { display: grid; gap: 8px; margin-top: 10px; }
+.action {
+  display: grid; grid-template-columns: 43px 1fr; gap: 10px; align-items: center; width: 100%;
+  padding: 10px; text-align: left; color: #203028; border: 1px solid #dce4df; border-radius: 12px;
+  background: #fff; cursor: pointer; transition: border-color .15s, transform .15s, box-shadow .15s;
+}
+.action:hover:not(:disabled) { transform: translateY(-1px); border-color: #74a58d; box-shadow: 0 5px 14px rgb(40 85 64 / 9%); }
+.action:disabled { cursor: not-allowed; opacity: .48; }
+.action--primary { border-color: #bad7c8; background: #f8fffb; }
+.action__icon {
+  display: grid; place-items: center; width: 43px; height: 34px; color: #236647; border-radius: 8px;
+  background: #e5f2eb; font-size: 10px; font-weight: 800; letter-spacing: .03em;
+}
+.action strong, .action small { display: block; }
+.action strong { font-size: 12px; }
+.action small { margin-top: 2px; color: #728079; font-size: 10px; }
+.status { margin-top: 10px; padding: 11px 12px; border-radius: 12px; background: #eaf3ee; }
+.status__row { display: flex; justify-content: space-between; gap: 8px; font-size: 11px; }
+.progress { height: 5px; margin-top: 8px; overflow: hidden; border-radius: 999px; background: #cdded5; }
+.progress span { display: block; width: 0; height: 100%; background: #2c7653; transition: width .2s; }
+.cancel { margin-top: 9px; padding: 0; color: #8a3c3c; border: 0; background: transparent; font-size: 10px; cursor: pointer; }
+.notice { margin: 10px 2px 0; color: #6d7973; font-size: 10px; text-align: center; }
+.notice--error { color: #a03838; }
+.notice--success { color: #246b4b; }
