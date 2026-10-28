@@ -19,12 +19,12 @@ A local-first Chrome extension that exports a full webpage as a PNG, paginated A
 
 ### 普通用户 / For users
 
-1. 从 GitHub Releases 下载 `longpage-archive-v0.1.0.zip` 并解压。
+1. 下载 [longpage-archive-v0.1.0.zip](https://github.com/2045shane/longpage-archive/raw/refs/heads/main/release/longpage-archive-v0.1.0.zip) 并解压。
 2. 在 Chrome 地址栏打开 `chrome://extensions/`。
 3. 开启右上角“开发者模式”。
 4. 点击“加载已解压的扩展程序”，选择刚解压的文件夹。
 
-1. Download `longpage-archive-v0.1.0.zip` from GitHub Releases and unzip it.
+1. Download [longpage-archive-v0.1.0.zip](https://github.com/2045shane/longpage-archive/raw/refs/heads/main/release/longpage-archive-v0.1.0.zip) and unzip it.
 2. Open `chrome://extensions/` in Chrome.
 3. Enable **Developer mode**.
 4. Click **Load unpacked** and select the extracted folder.

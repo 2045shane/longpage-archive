@@ -15,8 +15,8 @@
 
 ### 方法 A：安装已打包版本（推荐）
 
-1. 打开项目 GitHub 页的 **Releases**。
-2. 下载 `longpage-archive-v0.1.0.zip`。
+1. 点击下载 [longpage-archive-v0.1.0.zip](https://github.com/2045shane/longpage-archive/raw/refs/heads/main/release/longpage-archive-v0.1.0.zip)。
+2. 等浏览器完成下载。
 3. 双击 ZIP 解压，得到插件文件夹。
 4. 在 Chrome 地址栏输入 `chrome://extensions/` 并回车。
 5. 开启右上角的“开发者模式”。

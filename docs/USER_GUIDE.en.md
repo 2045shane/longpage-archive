@@ -15,8 +15,8 @@ The extension runs locally in Chrome. No account or API key is required.
 
 ### Option A: Install the packaged version (recommended)
 
-1. Open the project's **Releases** page on GitHub.
-2. Download `longpage-archive-v0.1.0.zip`.
+1. Download [longpage-archive-v0.1.0.zip](https://github.com/2045shane/longpage-archive/raw/refs/heads/main/release/longpage-archive-v0.1.0.zip).
+2. Wait for the browser to finish the download.
 3. Unzip the downloaded file.
 4. Enter `chrome://extensions/` in the Chrome address bar.
 5. Enable **Developer mode** in the top-right corner.
