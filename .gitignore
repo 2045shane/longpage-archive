@@ -6,3 +6,9 @@ dist/
 output/playwright/
 tmp/
 coverage/
+
+# Local AI-assistant settings & secrets (never commit)
+.claude/settings.local.json
+.env
+.env.local
+.env.*.local
